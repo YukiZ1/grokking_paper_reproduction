@@ -12,14 +12,13 @@ Implements high weight decay regularization to force the model away from memoriz
 ### Visualization
 The project generates three main types of plots to interpret the model's learning:
 1. Grokking Curves: Plots Training vs. Testing loss/accuracy over 10k+ epochs. Demonstrates the "jagged" struggle during the memorization phase and the smooth drop during the grokking phase.
-![Grokking Curves](images/image-1.png)
+![Grokking Curves](images/image.png)
 2. MLP Activity (Pre-ReLU): Visualizes the pre-activation outputs of MLP neurons to reveal sine/cosine wave patterns. Vertical scatter plots showing how specific neurons activate periodically across the input space $b$.
-![MLP Activity](images/image-2.png)
+![MLP Activity](images/image_1.png)
 3. Neuron Correlations: A grid of pairwise scatter plots showing circular/elliptical relationships between neurons, demonstrating rotational representations.
-![Neuron Correlations](images/image.png)
+![Neuron Correlations](images/image_2.png)
 4. Embedding Analysis: Frequency analysis of the learned embedding weights.
 
 ### Source
 Link: https://youtu.be/D8GOeCFFby4?si=-OmGfudmRexcHa-d
 OpenAI team’s grokking paper: https://arxiv.org/pdf/2201.02177.
-
